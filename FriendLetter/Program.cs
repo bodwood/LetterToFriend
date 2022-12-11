@@ -11,7 +11,9 @@ namespace FriendLetter
 
       builder.Services.AddControllersWithViews();
 
-      WebApplication app = builder.Build();
+      WebApplication app = builder.Build(); //createswebapplication host app
+
+      app.UseHttpsRedirection();  //configure our host to redirect to HTTPS when web app is accessed via HTTP
 
       app.UseRouting();
 

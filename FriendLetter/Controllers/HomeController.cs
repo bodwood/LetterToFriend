@@ -29,7 +29,7 @@ namespace FriendLetter.controller
       LetterVariable myLetterVariable = new LetterVariable(); //new instance of LetterVariable
       myLetterVariable.Recipient = recipient; //set recipitent property to recipient from parameter
       myLetterVariable.Sender = sender; //set sender property to sender from parameter
-      return View(myLetterVariable);  //return instance
+      return View(myLetterVariable);  //return instancel
     }
   }
 }
