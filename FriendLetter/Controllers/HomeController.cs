@@ -11,6 +11,6 @@ namespace FriendLetter.controller
     public string Goodbye() { return "Goodbye friend."; } //Goodbye() represents a route
 
     [Route("/")]
-    public string Letter() { return "Our virtual postcard will go here soon!"; }
+    public ActionResult Letter() { return View(); } //ActionResult handles redering views. View() is a built-in method from .Mvc namepace
   }
 }
